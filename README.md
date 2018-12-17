@@ -1,3 +1,6 @@
+> A Future is a placeholder object for a value that may not yet exist
+
+
 # Installation
 
 ```bash
