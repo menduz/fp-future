@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "diagnostics": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "declaration": true,
+    "moduleResolution": "node",
+    "stripInternal": true,
+    "pretty": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "lib": ["es6"]
+  },
+  "exclude": ["node_modules/**/*", "static/**/*"],
+  "include": ["**/*.ts"]
+}

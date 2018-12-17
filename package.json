@@ -1,0 +1,28 @@
+{
+  "name": "fp-future",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "scripts": {
+    "test": "tsc -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/menduz/fp-future.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/menduz/fp-future/issues"
+  },
+  "homepage": "https://github.com/menduz/fp-future#readme",
+  "devDependencies": {
+    "typescript": "latest"
+  },
+  "files": [
+    "index.d.ts",
+    "index.js"
+  ]
+}
