@@ -6,20 +6,19 @@ export type IFuture<T> = Promise<T> & {
 };
 
 export function future<T = any>(): IFuture<T> {
-  let resolver: (x: T) => void = (_: T) => {
-    throw new Error("Error");
-  };
-
-  let rejecter: (x: Error) => void = (x: Error) => {
-    throw x;
-  };
+  let resolver: (x: T) => void;
+  let rejecter: (x: Error) => void;
 
   const promise: any = new Promise((ok, err) => {
-    resolver = ok;
-    rejecter = err;
-  }).catch(() => (promise.isPending = false));
-
-  promise.then(() => (promise.isPending = false));
+    resolver = (x: T) => {
+      ok(x);
+      promise.isPending = false;
+    };
+    rejecter = (x: Error) => {
+      err(x);
+      promise.isPending = false;
+    };
+  }).catch(e => Promise.reject(e));
 
   promise.resolve = resolver;
   promise.reject = rejecter;

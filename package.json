@@ -5,7 +5,7 @@
   "main": "index.js",
   "typings": "index.d.ts",
   "scripts": {
-    "test": "tsc -p tsconfig.json"
+    "test": "(rm *.d.ts || true) && tsc -p tsconfig.json && mocha future.test.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/menduz/fp-future#readme",
   "devDependencies": {
+    "@types/mocha": "^5.2.5",
+    "mocha": "^5.2.0",
     "typescript": "latest"
   },
   "files": [
