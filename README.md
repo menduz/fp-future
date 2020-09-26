@@ -142,4 +142,3 @@ async function loadImageData(src: string): Promise<ImageData> {
   return futureColors;
 }
 ```
-
