@@ -20,7 +20,7 @@
   "homepage": "https://github.com/menduz/fp-future#readme",
   "devDependencies": {
     "@types/mocha": "^5.2.5",
-    "mocha": "^5.2.0",
+    "mocha": "^10.2.0",
     "typescript": "latest"
   },
   "files": [
